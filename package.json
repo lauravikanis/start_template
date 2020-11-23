@@ -6,7 +6,8 @@
   "main": "index.js",
   "dependencies": {
     "express": "^4.17.1",
-    "init": "^0.1.2"
+    "init": "^0.1.2",
+    "nodemon": "^2.0.6"
   },
   "devDependencies": {
     "eslint": "^7.14.0",
@@ -18,14 +19,16 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prettify": "prettier --write ."
+    "prettify": "prettier --write .",
+    "server": "nodemon server.js",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lauravikanis/start_template.git"
   },
   "author": "Laura Vikanis",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/lauravikanis/start_template/issues"
   },

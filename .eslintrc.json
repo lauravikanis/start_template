@@ -26,7 +26,7 @@
   "rules": {
     "no-unused-vars": [
       "warn",
-      { "vars": "all", "args": "after-used", "ignoreRestSiblings": true }
+      { "vars": "all", "args": "all", "ignoreRestSiblings": true }
     ],
     "import/no-anonymous-default-export": "off",
     "react/react-in-jsx-scope": "off"

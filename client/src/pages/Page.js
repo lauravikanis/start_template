@@ -1,17 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import Header from "../../components/Header/Header";
+import Header from "../components/Header/Header";
 import "./page.css";
 
-const Page = ({ user, onLogin, onLogout, onCreateAccount }) => (
+const Page = () => (
   <article>
-    <Header
-      user={user}
-      onLogin={onLogin}
-      onLogout={onLogout}
-      onCreateAccount={onCreateAccount}
-    />
+    <Header />
 
     <section>
       <h2>Pages in Storybook</h2>
@@ -23,7 +18,7 @@ const Page = ({ user, onLogin, onLogout, onCreateAccount }) => (
           rel="noopener noreferrer"
         >
           <strong>component-driven</strong>
-        </a>{" "}
+        </a>
         process starting with atomic components and ending with pages.
       </p>
       <p>
@@ -42,7 +37,7 @@ const Page = ({ user, onLogin, onLogout, onCreateAccount }) => (
         </li>
       </ul>
       <p>
-        Get a guided tutorial on component-driven development at{" "}
+        Get a guided tutorial on component-driven development at
         <a
           href="https://www.learnstorybook.com"
           target="_blank"
@@ -50,7 +45,7 @@ const Page = ({ user, onLogin, onLogout, onCreateAccount }) => (
         >
           Learn Storybook
         </a>
-        . Read more in the{" "}
+        . Read more in the
         <a
           href="https://storybook.js.org/docs"
           target="_blank"
@@ -61,7 +56,7 @@ const Page = ({ user, onLogin, onLogout, onCreateAccount }) => (
         .
       </p>
       <div className="tip-wrapper">
-        <span className="tip">Tip</span> Adjust the width of the canvas with the{" "}
+        <span className="tip">Tip</span> Adjust the width of the canvas with the
         <svg
           width="10"
           height="10"
@@ -83,9 +78,9 @@ const Page = ({ user, onLogin, onLogout, onCreateAccount }) => (
 );
 Page.propTypes = {
   user: PropTypes.shape({}),
-  onLogin: PropTypes.func.isRequired,
-  onLogout: PropTypes.func.isRequired,
-  onCreateAccount: PropTypes.func.isRequired,
+  onLogin: PropTypes.func,
+  onLogout: PropTypes.func,
+  onCreateAccount: PropTypes.func,
 };
 
 Page.defaultProps = {

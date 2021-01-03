@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import Button from "../Button";
+import Button from "../Button/Button";
 import "./header.css";
 
 const Header = ({ user, onLogin, onLogout, onCreateAccount }) => (
@@ -52,9 +52,9 @@ const Header = ({ user, onLogin, onLogout, onCreateAccount }) => (
 
 Header.propTypes = {
   user: PropTypes.shape({}),
-  onLogin: PropTypes.func.isRequired,
-  onLogout: PropTypes.func.isRequired,
-  onCreateAccount: PropTypes.func.isRequired,
+  onLogin: PropTypes.func,
+  onLogout: PropTypes.func,
+  onCreateAccount: PropTypes.func,
 };
 
 Header.defaultProps = {
